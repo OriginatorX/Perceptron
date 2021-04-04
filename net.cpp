@@ -1,7 +1,7 @@
-#include "inc/perceptron.hpp"
+# include <iostream>
+# include "inc/perceptron.hpp"
 
 int main(int, char** const) {
-
-	Perceptron{}.start();
-	return 0;
+	Perceptron().start();
+	return EXIT_SUCCESS;
 }

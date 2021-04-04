@@ -1,4 +1,4 @@
-#pragma once
+# pragma once
 
 class Perceptron {
 public:
@@ -6,21 +6,21 @@ public:
 	~Perceptron();
 
 	double getRangeRandom(int min, int max);
-	void valueOfOutNeuron();	
+	void   valueOfOutNeuron();	
 	size_t evolution();
-	void start();
+	void   start();
 private:	
-	size_t columns;
-	size_t rows;
+	size_t columnsNumber;
+	size_t rowsNumber;
 
-	double* inNeurons;
-	double outNeuron;	
-	double* synapsesWeights;	
+	double*  inputNeurons;
+	double   outNeuron;	
+	double*  synapsesWeights;	
 	double** learnPattern;	
-	double* trueOutValue;
+	double*  trueOutValue;
 	
-	size_t inNeuronsLength;
+	size_t inputNeuronsNumber;
 public:
-	Perceptron(const Perceptron&) = delete;
+	Perceptron(const Perceptron&)            = delete;
 	Perceptron& operator=(const Perceptron&) = delete;
 };
