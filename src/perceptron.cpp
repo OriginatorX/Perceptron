@@ -115,7 +115,8 @@ void Perceptron::valueOfOutNeuron() {
 }
 
 void Perceptron::start() {
-	std::cout << "Number of iterations " << evolution() << "\n";
+	size_t count = evolution();
+	std::cout << "Number of iterations " << count << "\n";
 	std::cout << "Result:\n";
 
 	for (size_t i = 0; i < columnsNumber; i++) {
