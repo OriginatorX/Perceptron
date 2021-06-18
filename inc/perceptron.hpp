@@ -4,7 +4,7 @@ class Perceptron {
 public:
 	Perceptron();
 	~Perceptron();
-
+public:
 	double getRangeRandom(int min, int max);
 	void   valueOfOutNeuron();	
 	size_t evolution();
