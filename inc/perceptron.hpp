@@ -21,6 +21,6 @@ private:
 	
 	size_t inputNeuronsNumber;
 public:
-	Perceptron(const Perceptron&)            = delete;
+	Perceptron(const Perceptron&) = delete;
 	Perceptron& operator=(const Perceptron&) = delete;
 };
