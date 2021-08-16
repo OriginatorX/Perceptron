@@ -60,24 +60,19 @@ Perceptron::Perceptron()
 
 Perceptron::~Perceptron() {
 	for (size_t i = 0; i < columnsNumber; i++) 
-		delete[] learnPattern[i];
-	delete[] learnPattern;
+		delete [] learnPattern[i];
+	delete [] learnPattern;
 
-	delete[] inputNeurons;
-	delete[] synapsesWeights;
-	delete[] trueOutValue;
-	
-	inputNeurons    = nullptr;
-	synapsesWeights = nullptr;
-	learnPattern    = nullptr;
-	trueOutValue    = nullptr; 
+	delete [] inputNeurons;
+	delete [] synapsesWeights;
+	delete [] trueOutValue;
 }
 
 double Perceptron::getRangeRandom(int min, int max) {
 	std::random_device              rand;
-	std::default_random_engine      gen(rand());
-	std::uniform_int_distribution<> dis(min, max);
-	return static_cast<double>      (dis(gen));
+	std::default_random_engine     gen(rand());
+	std::uniform_real_distribution<double> dis(min, max);
+	return dis(gen);
 }
 
 size_t Perceptron::evolution() {
@@ -110,8 +105,10 @@ void Perceptron::valueOfOutNeuron() {
 	for (size_t i = 0; i < inputNeuronsNumber; i++) 
 		outNeuron += inputNeurons[i] * synapsesWeights[i];
 	
-	if (outNeuron > theta) outNeuron = 1;
-	else outNeuron = 0;
+	if (outNeuron > theta) 
+		outNeuron = 1;
+	else 
+		outNeuron = 0;
 }
 
 void Perceptron::start() {
@@ -125,5 +122,5 @@ void Perceptron::start() {
 		valueOfOutNeuron();
 		std::cout << "Out of neuron: " << outNeuron << " ";
 	}
-	std::cout << "\n";
+	std::cout << std::endl;
 }
