@@ -4,9 +4,9 @@ set(CMAKE_CXX_STANDARD 11)
 project(Perceptron)
 
 add_library(Perceptio
-    inc/perceptron.hpp
-    src/perceptron.cpp
-    
+    inc/random.hpp
+    src/random.cpp
+
     inc/perceptron.hpp
     src/perceptron.cpp
 )
