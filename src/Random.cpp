@@ -7,12 +7,12 @@ Random::Random()
 	, engine_(std::random_device{}())
 {}
 
-const int32_t Random::operator() () {
+const int Random::operator() () {
 	randomINumber_ = engine_();
 	return randomINumber_;
 }
 
-const int32_t Random::operator() (int32_t lower, int32_t upper) {
+const int Random::operator() (int lower, int upper) {
 	
 	integer_rand	 dis{ lower, upper };
 	randomINumber_ = dis(engine_);
@@ -20,7 +20,7 @@ const int32_t Random::operator() (int32_t lower, int32_t upper) {
 	return	randomINumber_;
 }
 
-const double_t Random::operator() (double_t lower, double_t upper) {
+const double Random::operator() (double lower, double upper) {
 	
 	double_rand		  dis{ lower, upper };
 	randomDNumber_	= dis(engine_);

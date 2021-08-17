@@ -51,7 +51,7 @@ Perceptron::Perceptron(const Random& rand)
 	std::cout << "\n";
 
 	for (size_t i = 0; i < inputNeuronsNumber_; i++) 
-		synapsesWeights_[i] = random_(0.0, 1.0) * 0.2 + 0.1;
+		synapsesWeights_[i] = random_() * 0.2 + 0.1;
 
 	std::cout << "Weights:\n";
 	for (size_t i = 0; i < inputNeuronsNumber_; i++) 
