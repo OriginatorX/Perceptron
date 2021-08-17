@@ -1,4 +1,4 @@
-#include "../inc/Random.hpp"
+#include "../inc/random.hpp"
 
 Random::Random()
 	: randomINumber_( 0 )

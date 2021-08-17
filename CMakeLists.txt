@@ -6,12 +6,15 @@ project(Perceptron)
 add_library(Perceptio
     inc/perceptron.hpp
     src/perceptron.cpp
+    
+    inc/perceptron.hpp
+    src/perceptron.cpp
 )
 target_include_directories(Perceptio
     PUBLIC
     "inc"
 )
 add_executable(net
-    net.cpp
+    main.cpp
 )
 target_link_libraries(net Perceptio)
