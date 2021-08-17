@@ -3,7 +3,7 @@ function buildPerceptron {
 		mkdir build
 	fi
 	cd build
-	cmake -G "Ninja" ..
+	cmake -G "Visual Studio 16 2019" ..
 	cmake --build .
 }
 
