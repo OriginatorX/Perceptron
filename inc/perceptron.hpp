@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Random.h"
+#include "Random.hpp"
 
 class Perceptron {
 public:
