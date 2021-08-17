@@ -1,10 +1,9 @@
 #include <iostream>
 #include "inc/perceptron.hpp"
+#include "./inc/random.hpp"
 
 int main(int, char** const) {
-	Perceptron{}.start();
+	Perceptron{ Random{} }.start();
 
-	Perceptron perc;
-	//Perceptron per{std::move(perc)};
 	return EXIT_SUCCESS;
 }
