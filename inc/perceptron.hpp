@@ -1,25 +1,28 @@
-# pragma once
+#pragma once
+
+#include "Random.h"
 
 class Perceptron {
 public:
-	Perceptron();
+	Perceptron(const Random& rand);
 	~Perceptron();
 public:
-	double getRangeRandom(int min, int max);
 	void   valueOfOutNeuron();	
 	size_t evolution();
 	void   start();
-private:	
-	size_t columnsNumber;
-	size_t rowsNumber;
+private:
+	Random 		random_;
 
-	double*  inputNeurons;
-	double   outNeuron;	
-	double*  synapsesWeights;	
-	double** learnPattern;	
-	double*  trueOutValue;
+	size_t 	 	columnsNumber_;
+	size_t 		rowsNumber_;
+
+	double*  	inputNeurons_;
+	double   	outNeuron_;	
+	double*  	synapsesWeights_;	
+	double** 	learnPattern_;	
+	double*  	trueOutValue_;
 	
-	size_t inputNeuronsNumber;
+	size_t 		inputNeuronsNumber_;
 public:
 	Perceptron(const Perceptron&) = delete;
 	Perceptron& operator=(const Perceptron&) = delete;
