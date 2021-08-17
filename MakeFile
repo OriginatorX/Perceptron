@@ -1,0 +1,2 @@
+all:
+	gcc main.cpp ./src/perceptron.cpp ./src/random.cpp -o net
