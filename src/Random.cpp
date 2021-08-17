@@ -28,10 +28,10 @@ const double Random::operator() (double lower, double upper) {
 	return randomDNumber_;
 }
 
-const int32_t Random::IntContent() const {
+const int Random::IntContent() const {
 	return randomINumber_;
 }
 
-const double_t Random::DoubleContent() const {
+const double Random::DoubleContent() const {
 	return randomDNumber_;
 }
