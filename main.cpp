@@ -1,5 +1,5 @@
 #include <iostream>
-#include "inc/perceptron.hpp"
+#include "./inc/perceptron.hpp"
 #include "./inc/random.hpp"
 
 int main(int, char** const) {
