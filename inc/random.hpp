@@ -11,9 +11,9 @@ public:
 public:
 	const int     operator() ();
 
-	const int     operator() (int32_t lower, int32_t upper);
+	const int     operator() (int lower, int upper);
 
-	const double  operator() (double_t lower, double_t upper);
+	const double  operator() (double lower, double upper);
 
 	const int     IntContent()	const;
 	const double  DoubleContent()	const;
