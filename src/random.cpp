@@ -14,15 +14,15 @@ const int Random::operator() () {
 
 const int Random::operator() (int lower, int upper) {
 	
-	integer_rand	 dis{ lower, upper };
+	integer_rand dis{ lower, upper };
 	randomINumber_ = dis(engine_);
 
-	return	randomINumber_;
+	return randomINumber_;
 }
 
 const double Random::operator() (double lower, double upper) {
 	
-	double_rand		  dis{ lower, upper };
+	double_rand dis{ lower, upper };
 	randomDNumber_	= dis(engine_);
 
 	return randomDNumber_;
