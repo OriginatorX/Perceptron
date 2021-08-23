@@ -5,7 +5,7 @@
 #include "../inc/perceptron.hpp"
 
 Perceptron::Perceptron(const Random& rand) 
-	: random_			  (rand)
+	: random_	      (rand)
 	, columnsNumber_      (4)
 	, rowsNumber_         (2)  
 	, outNeuron_          (0)
