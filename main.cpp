@@ -3,7 +3,9 @@
 #include "./inc/random.hpp"
 
 int main(int, char** const) {
-	Perceptron{ Random{} }.start();
+	Perceptron{ 
+		Random{} 
+	}.start();
 
 	return EXIT_SUCCESS;
 }
