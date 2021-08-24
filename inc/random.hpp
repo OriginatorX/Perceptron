@@ -4,8 +4,8 @@
 
 class Random {
 public:
-	using integer_rand  = std::uniform_int_distribution<int32_t>;
-	using double_rand   = std::uniform_real_distribution<double_t>;
+	using integer_rand  = std::uniform_int_distribution<int>;
+	using double_rand   = std::uniform_real_distribution<double>;
 public:
 	Random();
 public:
