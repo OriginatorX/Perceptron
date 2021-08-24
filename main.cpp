@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "./inc/perceptron.hpp"
 #include "./inc/random.hpp"
 
