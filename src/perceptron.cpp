@@ -5,7 +5,7 @@
 #include "../inc/perceptron.hpp"
 
 Perceptron::Perceptron(const Random& rand) 
-	: random_		   (rand)
+	: random_	   (rand)
 	, columnsNumber_      (4)
 	, rowsNumber_         (2)  
 	, outNeuron_          (0)
@@ -22,7 +22,7 @@ Perceptron::Perceptron(const Random& rand)
 
 	std::cout << "Input learnPatterns:\n";
 
-	int32_t placeholder;
+	int placeholder;
 	for (size_t i = 0; i < columnsNumber_; i++) {
 		for (size_t j = 0; j < rowsNumber_; j++) {
 			std::cin >> placeholder;
@@ -92,7 +92,7 @@ size_t Perceptron::evolution() {
 }
 
 void Perceptron::valueOfOutNeuron() {
-	outNeuron_    = 0;
+	outNeuron_   = 0;
 	double theta = 0.5;
 
 	for (size_t i = 0; i < inputNeuronsNumber_; i++) 
